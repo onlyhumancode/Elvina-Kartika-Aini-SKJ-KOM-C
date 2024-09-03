@@ -1,0 +1,9 @@
+all: mulnumbers
+add_numbers: mulnumbers.cpp
+	g++ -o mulnumbers mulnumbers.cpp
+dump: mulnumbers
+	objdump -d mulnumbers > mulnumbers.asm
+clean:
+	rm -f mulnumbers mulnumbers.asm
+run: mulnumbers
+	./mulnumbers
