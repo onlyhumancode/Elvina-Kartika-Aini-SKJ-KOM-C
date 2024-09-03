@@ -1,0 +1,9 @@
+all: addnumbers
+add_numbers: addnumbers.cpp
+	g++ -o addnumbers addnumbers.cpp
+dump: addnumbers
+	objdump -d addnumbers > addnumbers.asm
+clean:
+	rm -f addnumbers addnumbers.asm
+run: addnumbers
+	./addnumbers
