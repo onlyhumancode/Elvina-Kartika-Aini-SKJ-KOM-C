@@ -1,1 +1,15 @@
+#include <iostream>
+using namespace std;
 
+int main() {
+    int x,y;
+    cout<< "Masukan angka yang ingin ditambahkan :" <<endl;
+    cin>>x>>y;
+
+    int sum;
+    sum = x+y;
+
+    cout<<sum<<endl;
+
+    return 0;
+}
